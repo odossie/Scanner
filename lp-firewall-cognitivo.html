@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Firewall Cognitivo — Pare de decidir no automático | DOSSIÊ Nº 004</title>
+<meta name="description" content="O protocolo que ensina a reconhecer influência, pressão e manipulação antes de agir — e a recuperar o controle da própria decisão. Um dossiê operacional da Divisão de Inteligência Comportamental.">
+<meta name="theme-color" content="#1b1712">
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Firewall Cognitivo — Pare de decidir no automático">
+<meta property="og:description" content="O protocolo para reconhecer manipulação antes de agir. DOSSIÊ Nº 004.">
+<meta property="og:image" content="https://placehold.co/1200x630/1b1712/E7DFC8?text=FIREWALL+COGNITIVO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Firewall Cognitivo — DOSSIÊ Nº 004">
+<meta name="twitter:description" content="O protocolo para reconhecer manipulação antes de agir.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231b1712'/%3E%3Ctext x='50' y='70' font-size='62' text-anchor='middle' fill='%23E7DFC8' font-family='Georgia'%3ED%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Product",
+  "name":"Firewall Cognitivo — Protocolo Anti-Manipulação",
+  "description":"Protocolo interativo para reconhecer fatores de influência, desenvolver pensamento crítico e fortalecer a autonomia na tomada de decisões.",
+  "brand":{"@type":"Brand","name":"O Dossiê"},
+  "offers":{"@type":"Offer","price":"27.00","priceCurrency":"BRL","availability":"https://schema.org/InStock"}
+}
+</script>
+
+<style>
+:root{
+  --paper:#E7DFC8;--paper-aged:#D5C6A2;--ink:#2B241C;--ink-soft:#4a3d2e;
+  --stamp:#8B1E1E;--stamp-blue:#2a3d5c;--grey:#5B5B5B;--black:#12100c;--bg:#1b1712;
+  --font-display:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;
+  --font-type:'Courier New',Courier,'Lucida Console',monospace;
+  --font-body:'Iowan Old Style',Georgia,'Times New Roman',serif;
+  --font-mono:'Courier New',Courier,monospace;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6;}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;}}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.1;margin:0;}
+a{color:inherit;}
+.wrap{max-width:820px;margin:0 auto;padding:0 6vw;}
+
+/* paper section */
+.paper{position:relative;color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    radial-gradient(circle at 84% 20%, rgba(43,36,28,0.08) 0%, transparent 12%),
+    repeating-linear-gradient(90deg, rgba(43,36,28,0.012) 0px, transparent 1px, transparent 2px, rgba(43,36,28,0.012) 3px),
+    linear-gradient(180deg, var(--paper) 0%, var(--paper-aged) 100%);}
+.paper::before{content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.16 0 0 0 0 0.14 0 0 0 0 0.10 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+.paper::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 120px rgba(43,36,28,0.12);}
+.paper .wrap{position:relative;z-index:1;}
+
+/* eyebrow / labels */
+.eyebrow{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--stamp);margin-bottom:1.2rem;}
+.eyebrow.light{color:var(--paper-aged);}
+.classified-tag{display:inline-block;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.16em;
+  color:var(--stamp);border:1px solid var(--stamp);padding:.2em .55em;}
+
+/* sticky bar */
+.topbar{position:sticky;top:0;z-index:50;background:var(--black);
+  border-bottom:1px solid rgba(231,223,200,0.12);display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:.6rem 6vw;padding-top:calc(.6rem + env(safe-area-inset-top));}
+.topbar .id{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.12em;color:var(--paper-aged);}
+.topbar .cta{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;background:var(--stamp);
+  color:var(--paper);text-decoration:none;padding:.5em 1em;white-space:nowrap;transition:background .2s;}
+.topbar .cta:hover{background:#a12525;}
+@media(max-width:560px){.topbar .id{display:none;}}
+
+/* buttons */
+.btn{display:inline-block;font-family:var(--font-mono);letter-spacing:.1em;text-decoration:none;cursor:pointer;
+  border:none;transition:transform .2s ease, box-shadow .2s ease, background .2s ease;}
+.btn-primary{background:var(--stamp);color:var(--paper);font-size:.9rem;padding:1em 2em;
+  box-shadow:0 6px 18px rgba(139,30,30,0.3);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(139,30,30,0.4);background:#a12525;}
+.btn-primary:active{transform:translateY(0);}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);font-size:.8rem;padding:.9em 1.6em;}
+.btn-ghost:hover{background:var(--ink);color:var(--paper);}
+.btn-ghost.light{color:var(--paper);border-color:var(--paper-aged);}
+.btn-ghost.light:hover{background:var(--paper);color:var(--ink);}
+.btn:focus-visible{outline:2px solid var(--stamp);outline-offset:3px;}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding:5rem 0 4.5rem;text-align:left;overflow:hidden;
+  background:radial-gradient(ellipse at 30% 0%, #241e17 0%, #12100c 80%);}
+.hero .stamp-corner{position:absolute;top:8%;right:4%;transform:rotate(9deg);opacity:.5;
+  border:3px solid var(--stamp);color:var(--stamp);font-family:var(--font-type);font-weight:700;
+  font-size:clamp(.7rem,2vw,1rem);letter-spacing:.15em;padding:.35em .7em;mix-blend-mode:screen;}
+.hero h1{color:var(--paper);font-size:clamp(2.1rem,6.5vw,3.6rem);letter-spacing:.005em;}
+.hero h1 em{font-style:italic;color:var(--stamp);}
+.hero .sub{color:var(--paper-aged);font-size:clamp(1.05rem,2.4vw,1.3rem);margin:1.6rem 0 2.4rem;max-width:600px;line-height:1.5;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;}
+.hero .micro{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;color:var(--grey);margin-top:1.6rem;}
+
+/* file line divider */
+.fileline{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.14em;color:var(--grey);
+  display:flex;align-items:center;gap:1rem;margin:0;padding:1rem 6vw;background:var(--black);
+  border-top:1px solid rgba(231,223,200,0.1);border-bottom:1px solid rgba(231,223,200,0.1);}
+.fileline .bar{flex:1;height:1px;background:rgba(231,223,200,0.18);}
+
+/* sections */
+section{padding:4.5rem 0;}
+.sec-title{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:1.4rem;}
+.sec-title .num{font-family:var(--font-mono);font-size:.5em;color:var(--stamp);letter-spacing:.1em;display:block;margin-bottom:.4rem;font-weight:400;}
+.lead{font-size:1.12rem;line-height:1.7;}
+.paper p{color:var(--ink);}
+.paper strong{color:var(--stamp);}
+
+/* diagnostic scene list */
+.scene{border-left:3px solid var(--stamp);padding:.3rem 0 .3rem 1.2rem;margin:1.4rem 0;
+  font-size:1.05rem;font-style:italic;color:var(--ink-soft);}
+
+/* reframe callout */
+.reframe{background:var(--ink);color:var(--paper);padding:2.4rem 2rem;margin:2rem 0;position:relative;}
+.reframe .eyebrow{color:var(--paper-aged);}
+.reframe h3{color:var(--paper);font-size:clamp(1.4rem,3.5vw,1.9rem);margin-bottom:1rem;}
+.reframe p{color:var(--paper-aged);margin:0;}
+.reframe strong{color:var(--paper);}
+
+/* module manifest */
+.manifest{list-style:none;padding:0;margin:2rem 0 0;border-top:1px solid rgba(43,36,28,0.25);}
+.manifest li{display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;
+  padding:1rem 0;border-bottom:1px solid rgba(43,36,28,0.25);}
+.manifest .mnum{font-family:var(--font-mono);font-size:.72rem;color:var(--stamp);letter-spacing:.05em;}
+.manifest .mname{font-family:var(--font-display);font-weight:700;font-size:1.1rem;}
+.manifest .mdesc{display:block;font-family:var(--font-body);font-weight:400;font-size:.9rem;color:var(--ink-soft);margin-top:.2rem;}
+.manifest .mtype{font-family:var(--font-mono);font-size:.6rem;color:var(--grey);letter-spacing:.08em;text-align:right;white-space:nowrap;}
+@media(max-width:560px){.manifest li{grid-template-columns:auto 1fr;}.manifest .mtype{display:none;}}
+
+/* two-column for/not-for */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem;}
+.split .col{padding:1.6rem 1.4rem;border:1px solid rgba(231,223,200,0.14);background:rgba(231,223,200,0.03);}
+.split h4{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.1em;margin:0 0 1rem;}
+.split.dark h4.yes{color:#8fae7a;}.split.dark h4.no{color:#c98;}
+.split ul{list-style:none;padding:0;margin:0;}
+.split li{padding:.5rem 0;border-bottom:1px dotted rgba(231,223,200,0.12);font-size:.95rem;color:var(--paper-aged);}
+.split li::before{font-family:var(--font-mono);margin-right:.6rem;}
+.split .yeslist li::before{content:"+";color:#8fae7a;}
+.split .nolist li::before{content:"—";color:#c98;}
+@media(max-width:560px){.split{grid-template-columns:1fr;}}
+
+/* honest / anti-hype (signature section) */
+.honest{background:var(--paper);color:var(--ink);}
+.honest .stamp-verdict{display:inline-block;transform:rotate(-3deg);border:2px solid var(--stamp);
+  color:var(--stamp);font-family:var(--font-type);font-weight:700;font-size:.8rem;letter-spacing:.12em;
+  padding:.3em .7em;margin-bottom:1.4rem;}
+.honest .not-list{list-style:none;padding:0;margin:1.6rem 0;}
+.honest .not-list li{padding:.9rem 0;border-bottom:1px solid rgba(43,36,28,0.2);font-size:1rem;line-height:1.55;}
+.honest .not-list li b{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;color:var(--stamp);
+  display:block;margin-bottom:.2rem;text-transform:uppercase;}
+
+/* method / lineage */
+.lineage{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+  background:rgba(231,223,200,0.12);border:1px solid rgba(231,223,200,0.12);margin-top:2rem;}
+.lineage div{background:var(--bg);padding:1.2rem 1rem;}
+.lineage .name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--paper);}
+.lineage .role{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.05em;color:var(--grey);margin-top:.3rem;}
+
+/* testimonial placeholder */
+.placeholder{border:1px dashed rgba(231,223,200,0.3);padding:1.4rem;margin:1.2rem 0;
+  font-family:var(--font-mono);font-size:.78rem;color:var(--grey);letter-spacing:.03em;line-height:1.6;}
+
+/* offer card */
+.offer{background:var(--paper);color:var(--ink);}
+.offer-card{border:2px solid var(--ink);background:var(--paper);padding:2.6rem 2rem;position:relative;margin-top:1rem;}
+.offer-card .classified-tag{position:absolute;top:-1px;right:1.4rem;background:var(--paper);}
+.offer-card h3{font-size:1.5rem;margin-bottom:.4rem;}
+.offer-includes{list-style:none;padding:0;margin:1.6rem 0;}
+.offer-includes li{padding:.55rem 0;font-size:.98rem;display:flex;gap:.7rem;align-items:baseline;}
+.offer-includes li::before{content:"▪";color:var(--stamp);}
+.price-row{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;margin:1.6rem 0 .4rem;}
+.price{font-family:var(--font-display);font-weight:700;font-size:2.8rem;color:var(--stamp);line-height:1;}
+.price-note{font-family:var(--font-mono);font-size:.72rem;color:var(--grey);letter-spacing:.04em;}
+.offer-card .btn-primary{width:100%;text-align:center;margin-top:1.2rem;box-sizing:border-box;}
+.guarantee{font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);letter-spacing:.03em;
+  margin-top:1.4rem;line-height:1.7;border-top:1px dotted rgba(43,36,28,0.3);padding-top:1.2rem;}
+.dm-alt{text-align:center;margin-top:1.6rem;font-family:var(--font-mono);font-size:.78rem;color:var(--grey);}
+.dm-alt a{color:var(--stamp);}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid rgba(231,223,200,0.14);}
+.faq-q{width:100%;text-align:left;background:none;border:none;color:var(--paper);cursor:pointer;
+  font-family:var(--font-display);font-weight:700;font-size:1.1rem;padding:1.2rem 2rem 1.2rem 0;position:relative;}
+.faq-q::after{content:"+";position:absolute;right:0;top:1.1rem;font-family:var(--font-mono);color:var(--stamp);font-size:1.3rem;}
+.faq-item.open .faq-q::after{content:"–";}
+.faq-q:focus-visible{outline:2px solid var(--stamp);outline-offset:2px;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faq-a-in{padding:0 0 1.3rem;color:var(--paper-aged);font-size:.98rem;line-height:1.7;}
+.faq-item.open .faq-a{max-height:400px;}
+
+/* final CTA */
+.final{text-align:center;background:radial-gradient(ellipse at 50% 100%, #241e17 0%, #12100c 80%);padding:5rem 0;}
+.final h2{color:var(--paper);font-size:clamp(1.8rem,5vw,2.8rem);margin-bottom:1.2rem;}
+.final p{color:var(--paper-aged);max-width:520px;margin:0 auto 2.2rem;}
+
+/* footer */
+.foot{background:var(--black);padding:2.4rem 6vw;border-top:1px solid rgba(231,223,200,0.1);}
+.foot .row{max-width:820px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+  font-family:var(--font-mono);font-size:.64rem;letter-spacing:.08em;color:var(--grey);}
+.foot .barcode{display:flex;align-items:flex-end;gap:2px;height:20px;}
+.foot .barcode span{display:block;width:2px;background:var(--paper-aged);opacity:.5;}
+.foot .disclaimer{max-width:820px;margin:1.4rem auto 0;font-family:var(--font-mono);font-size:.62rem;
+  color:#4a463d;letter-spacing:.02em;line-height:1.6;}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+.rv.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="id">DOSSIÊ Nº 004 · FIREWALL COGNITIVO</span>
+  <a href="#adquirir" class="cta">ACESSAR O DOSSIÊ</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="stamp-corner">CONFIDENCIAL</div>
+    <div class="eyebrow light">Divisão de Inteligência Comportamental · Dossiê Nº 004</div>
+    <h1>Toda vez que você decide no automático, <em>alguém decide por você.</em></h1>
+    <p class="sub">O Firewall Cognitivo mostra como enxergar influência, pressão e manipulação no instante em que aparecem — e como retomar a decisão <strong>antes</strong> que ela vire arrependimento.</p>
+    <div class="hero-cta">
+      <a href="#adquirir" class="btn btn-primary">ACESSAR O PROTOCOLO — R$ 27</a>
+      <a href="#o-que-e" class="btn btn-ghost light">Ver o que é</a>
+    </div>
+    <div class="micro">9 módulos operacionais · acesso imediato · funciona no celular</div>
+  </div>
+</header>
+
+<div class="fileline"><span>ARQ.004</span><span class="bar"></span><span>CLASSIFICAÇÃO: CONFIDENCIAL</span></div>
+
+<!-- ============ DIAGNÓSTICO ============ -->
+<section class="paper">
+  <div class="wrap rv">
+    <div class="eyebrow">Relatório preliminar</div>
+    <h2 class="sec-title">Você já disse "sim" quando queria dizer "não".</h2>
+    <p class="lead">Na hora, pareceu a escolha certa. Foi só mais tarde — no trânsito, no banho, encarando o teto às duas da manhã — que a conta não fechou. A decisão levava a sua assinatura, mas não tinha sido bem sua.</p>
+    <div class="scene">"Só hoje com esse preço." E você comprou.</div>
+    <div class="scene">"Se você fosse comprometido, nem precisava pensar." E você aceitou.</div>
+    <div class="scene">"Todo mundo do time já topou." E você foi junto.</div>
+    <p>Repare: nenhuma dessas frases é agressiva. Nenhuma te obriga a nada. E é aí que mora a força delas — trabalham num nível logo <strong>abaixo do ponto em que você percebe que está sendo conduzido</strong>. Quando a ficha finalmente cai, a decisão já saiu.</p>
+  </div>
+</section>
+
+<!-- ============ REFRAME ============ -->
+<section class="paper" style="padding-top:0;">
+  <div class="wrap rv">
+    <div class="reframe">
+      <div class="eyebrow">Reenquadramento</div>
+      <h3>O problema nunca foi força de vontade. Foi falta de visão.</h3>
+      <p>Você não cede por ser fraco. Cede porque <strong>não enxerga o mecanismo enquanto ele funciona</strong> — e ninguém se protege de um gatilho que não sabe nomear. A parte boa é que reconhecer é habilidade, não dom: dá para treinar, e instala mais rápido do que parece. É o que um firewall faz — barra na entrada, antes de rodar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE É ============ -->
+<section class="paper" id="o-que-e" style="padding-top:0;">
+  <div class="wrap rv">
+    <div class="eyebrow">Objeto</div>
+    <h2 class="sec-title"><span class="num">O QUE VOCÊ RECEBE</span>Um dossiê para usar, não mais um curso para acumular.</h2>
+    <p class="lead">O Firewall Cognitivo não é videoaula, não é ebook, não é discurso motivacional. É um arquivo confidencial interativo: nove folhas, e cada uma delas é uma ferramenta que você aplica na situação real, no momento em que ela acontece.</p>
+    <p>Você abre a pasta, percorre os módulos e aciona o protocolo quando precisa. Foi pensado para consulta rápida sob pressão — que é, não por acaso, o momento em que a manipulação costuma vencer.</p>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO / MÓDULOS ============ -->
+<section class="paper" style="padding-top:0;">
+  <div class="wrap rv">
+    <div class="eyebrow">Índice do arquivo · 9 módulos</div>
+    <ul class="manifest">
+      <li><span class="mnum">01</span><span><span class="mname">Como a manipulação funciona</span><span class="mdesc">Onde termina a influência legítima e começa a manipulação — a linha que quase ninguém traça.</span></span><span class="mtype">FUNDAMENTOS</span></li>
+      <li><span class="mnum">02</span><span><span class="mname">Superfícies de ataque</span><span class="mdesc">Os estados em que sua guarda cai — e como flagrá-los em você mesmo, na hora.</span></span><span class="mtype">DIAGNÓSTICO</span></li>
+      <li><span class="mnum">03</span><span><span class="mname">Gatilhos psicológicos</span><span class="mdesc">Doze gatilhos catalogados, cada um com a pergunta exata que o desarma.</span></span><span class="mtype">CATÁLOGO</span></li>
+      <li><span class="mnum">04</span><span><span class="mname">Indicador de necessidade de análise</span><span class="mdesc">Uma ferramenta interativa que mede quanto cuidado a decisão à sua frente realmente exige.</span></span><span class="mtype">FERRAMENTA</span></li>
+      <li><span class="mnum">05</span><span><span class="mname">Protocolo P.A.R.A.</span><span class="mdesc">Quatro passos para acionar sob pressão — curtos o bastante para lembrar na hora.</span></span><span class="mtype">PROTOCOLO</span></li>
+      <li><span class="mnum">06</span><span><span class="mname">Laboratório</span><span class="mdesc">Casos reais comentados: relacionamento, trabalho, publicidade, golpes.</span></span><span class="mtype">PRÁTICA</span></li>
+      <li><span class="mnum">07</span><span><span class="mname">Checklist operacional</span><span class="mdesc">Oito verificações antes de qualquer decisão que pese. Fica salvo no seu aparelho.</span></span><span class="mtype">OPERACIONAL</span></li>
+      <li><span class="mnum">08</span><span><span class="mname">Exercícios</span><span class="mdesc">Trechos para você analisar sozinho antes de conferir o gabarito.</span></span><span class="mtype">TREINO</span></li>
+      <li><span class="mnum">09</span><span><span class="mname">Recomendações</span><span class="mdesc">As obras que sustentam o método, para você seguir por conta própria depois do dossiê.</span></span><span class="mtype">ANEXO</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PARA QUEM ============ -->
+<section>
+  <div class="wrap rv">
+    <div class="eyebrow light">Critério de acesso</div>
+    <h2 class="sec-title" style="color:var(--paper);">Isto não é para todo mundo.</h2>
+    <div class="split dark">
+      <div class="col">
+        <h4 class="yes">SERVE PARA VOCÊ SE</h4>
+        <ul class="yeslist">
+          <li>Você decide rápido demais e vive se explicando depois</li>
+          <li>Seu dia é feito de vendas, chefes ou negociação</li>
+          <li>Cansou de ser previsível para quem te observa de perto</li>
+          <li>Prefere método frio a autoajuda morna</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="no">NÃO SERVE SE</h4>
+        <ul class="nolist">
+          <li>Procura um atalho para manipular os outros</li>
+          <li>Espera uma pílula mágica sem mover um dedo</li>
+          <li>Quer assistir a uns vídeos e já se sentir blindado</li>
+          <li>Acha que já sabe tudo sobre o próprio comportamento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE NÃO É (assinatura) ============ -->
+<section class="honest">
+  <div class="wrap rv">
+    <div class="stamp-verdict">PARECER TÉCNICO</div>
+    <h2 class="sec-title"><span class="num">DECLARAÇÃO DE HONESTIDADE</span>O que este dossiê <em>não</em> promete.</h2>
+    <p class="lead">Um material sobre manipulação que mente na própria venda se entrega logo na primeira linha. Então vão aqui os limites, por escrito, antes de você pagar:</p>
+    <ul class="not-list">
+      <li><b>Não te torna imune</b>Ninguém fica imune. O que ele faz é diminuir o número de vezes em que você é pego desprevenido — não zerar.</li>
+      <li><b>Não é curso de manipular pessoas</b>É o contrário disso. Ele te ensina a reconhecer para não ser levado; quem chegou querendo manipular vai embora frustrado.</li>
+      <li><b>Não funciona sozinho</b>É ferramenta, e ferramenta parada não protege ninguém. O trabalho de aplicar continua sendo seu.</li>
+      <li><b>Não substitui estudo contínuo</b>É um ponto de partida organizado. O Módulo 9 mostra para onde caminhar quando ele acabar.</li>
+    </ul>
+    <p>Se depois de tudo isso você ainda quer, então é para você.</p>
+  </div>
+</section>
+
+<!-- ============ MÉTODO / LINHAGEM ============ -->
+<section>
+  <div class="wrap rv">
+    <div class="eyebrow light">Base do método</div>
+    <h2 class="sec-title" style="color:var(--paper);">Não inventamos nada. Só organizamos o que já é ciência.</h2>
+    <p style="color:var(--paper-aged);max-width:620px;">Cada módulo condensa décadas de pesquisa sobre decisão, vieses e persuasão no formato mais direto a que a gente conseguiu chegar. As fontes estão no dossiê, abertas para você conferir uma por uma.</p>
+    <div class="lineage">
+      <div><div class="name">Kahneman</div><div class="role">Vieses e decisão</div></div>
+      <div><div class="name">Cialdini</div><div class="role">Gatilhos de persuasão</div></div>
+      <div><div class="name">Sagan</div><div class="role">Ceticismo aplicado</div></div>
+      <div><div class="name">Galef</div><div class="role">Pensamento exploratório</div></div>
+      <div><div class="name">Voss</div><div class="role">Negociação sob pressão</div></div>
+    </div>
+
+    <!-- Prova social: preencher com clientes reais -->
+    <div class="placeholder">
+      [ ESPAÇO RESERVADO — PROVA SOCIAL ]<br>
+      Insira aqui de 2 a 4 depoimentos reais assim que tiver os primeiros compradores.
+      Formato sugerido: um print curto + primeiro nome + contexto (ex.: "vendedor", "22 anos").
+      Não invente. Um depoimento real vale mais que dez fabricados — e é o único coerente com a tese desta página.
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="offer" id="adquirir">
+  <div class="wrap rv">
+    <div class="eyebrow">Liberação de acesso</div>
+    <h2 class="sec-title">Acessar o Firewall Cognitivo.</h2>
+    <div class="offer-card">
+      <span class="classified-tag">DOSSIÊ Nº 004</span>
+      <h3>Firewall Cognitivo — completo</h3>
+      <p style="margin:.2rem 0 0;color:var(--ink-soft);font-family:var(--font-mono);font-size:.78rem;letter-spacing:.04em;">Protocolo Anti-Manipulação · acesso vitalício</p>
+      <ul class="offer-includes">
+        <li>Os nove módulos, do primeiro conceito ao último exercício</li>
+        <li>Indicador e checklist que guardam seu progresso no aparelho</li>
+        <li>Laboratório com casos reais comentados</li>
+        <li>Acesso na hora, direto do navegador</li>
+        <li>Atualizações desta versão sem pagar de novo</li>
+      </ul>
+      <div class="price-row">
+        <span class="price">R$ 27</span>
+        <span class="price-note">pagamento único · preço de lançamento</span>
+      </div>
+      <a href="https://pay.cakto.com.br/34xqhg3_947319" class="btn btn-primary" target="_blank" rel="noopener">QUERO ACESSAR O PROTOCOLO</a>
+      <div class="guarantee">
+        GARANTIA — Você tem 7 dias para pedir o reembolso integral, pelo motivo que for, no seu direito de arrependimento (Art. 49, CDC). Sem interrogatório, sem atrito. O risco fica com a gente.
+      </div>
+    </div>
+    <div class="dm-alt">
+      Ainda na dúvida? Manda <strong>DOSSIÊ</strong> no direct do <a href="https://instagram.com/o_dossie_" target="_blank" rel="noopener">@o_dossie_</a> e pergunta o que precisar antes de decidir.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap rv">
+    <div class="eyebrow light">Perguntas de rotina</div>
+    <h2 class="sec-title" style="color:var(--paper);">Antes de decidir.</h2>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q">Preciso instalar alguma coisa?</button><div class="faq-a"><div class="faq-a-in">Nada. Abre direto no navegador do celular ou do computador, sem aplicativo e sem cadastro chato. Você recebe o acesso e já começa.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Isso é conteúdo motivacional?</button><div class="faq-a"><div class="faq-a-in">Não. É método frio e aplicável, sem frase de efeito para te deixar animado por cinco minutos. A ideia é que você reconheça um gatilho na próxima conversa de verdade — não que você saia inspirado.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Vou virar imune a manipulação?</button><div class="faq-a"><div class="faq-a-in">Não — e desconfie de quem promete isso. Ninguém fica imune. Você fica bem mais difícil de pegar no contrapé, e é justamente isso que muda o jogo no dia a dia.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Quanto tempo leva para aplicar?</button><div class="faq-a"><div class="faq-a-in">O protocolo P.A.R.A. você usa já no mesmo dia. O resto é material de consulta: não precisa "terminar o curso" para começar a se proteger.</div></div></div>
+      <div class="faq-item"><button class="faq-q">E se não for para mim?</button><div class="faq-a"><div class="faq-a-in">Sete dias de garantia integral. Pediu, devolvemos, e você não precisa justificar nada.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final">
+  <div class="wrap rv">
+    <h2>Da próxima vez que te apressarem, você vai perceber.</h2>
+    <p>É essa a diferença entre reagir e decidir. O dossiê está liberado.</p>
+    <a href="#adquirir" class="btn btn-primary">ACESSAR O FIREWALL COGNITIVO — R$ 27</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="row">
+    <span>O DOSSIÊ · DIVISÃO DE INTELIGÊNCIA COMPORTAMENTAL</span>
+    <div class="barcode" aria-hidden="true"></div>
+    <span>ARQ.004 · @o_dossie_</span>
+  </div>
+  <p class="disclaimer">Material de caráter educacional sobre pensamento crítico e reconhecimento de vieses. Não constitui aconselhamento psicológico, jurídico ou financeiro. Resultados dependem da aplicação individual.</p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  // barcode
+  var bc=document.querySelector('.foot .barcode');
+  if(bc){var n=30;for(var i=0;i<n;i++){var s=document.createElement('span');
+    s.style.height=(7+Math.random()*13)+'px';bc.appendChild(s);}}
+  // reveal on scroll
+  var rvs=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+    rvs.forEach(function(el){io.observe(el);});
+  } else { rvs.forEach(function(el){el.classList.add('in');}); }
+  // faq
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){q.closest('.faq-item').classList.toggle('open');});
+  });
+})();
+</script>
+</body>
+</html>
